@@ -1,0 +1,139 @@
+/* Tablet */
+@media  (min-width: 740px) and (max-width: 1024px) {
+    .header__main {
+        margin: 10px;
+      }
+    .carousel{
+        height: 75%;
+        margin-top: 60px;
+      }
+      .service_container {
+        margin: 10px;
+      }
+      .service_container-item {
+        display: inline;
+        height: fit-content;
+        text-align: center;
+        width: inherit;
+      }
+      .saleoff_container {
+        margin: 10px;
+      }
+}
+
+/* Mobile */
+@media (max-width: 739px) {
+    .section_header {
+    font-size: 24px;
+    text-align: left;
+  }
+  .service_container {
+    margin: 5px 5px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 5px;
+  }
+  .service_container-item {
+    display: inline;
+    height: fit-content;
+    text-align: center;
+    width: inherit;
+  }
+  .service_container-item i {
+    font-size: 20px;
+    padding: 3px;
+  }
+  .service_container-item div {
+    padding: 3px;
+    font-size: 12px;
+  }
+.carousel{
+    height: 50%;
+    margin-top: 52px;
+  }
+  .saleoff_container {
+    margin: 5px 5px;
+  }
+  .saleoff_container-box {
+    display: block;
+  }
+  .saleoff_container-item img {
+    height: 130px;
+    width: 100%;
+  }
+  main {
+    margin: 5px 5px;
+  }
+  .section_box {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 5px;
+  }
+  .section_box1,
+  .section_box2,
+  .section_box3,
+  .section_box4 {
+    width: 180px;
+    height: 280px;
+  }
+  .section_img {
+    height: 160px;
+    width: 160px;
+  }
+  .readmore {
+    height: 160px;
+    width: 160px;
+    left: 7px;
+  }
+
+  .news_container {
+    margin: 5px 5px;
+  }
+  .news_container-box {
+    display: block;
+  }
+  .news_container-item:nth-child(2),
+  .news_container-item:nth-child(3) {
+    display: none;
+  }
+  footer {
+    height: fit-content;
+  }
+  .footer {
+    display: block;
+    margin: 5px 5px;
+  }
+  .footer_section ul li,
+  .footer_section table {
+    display: none;
+  }
+  .footer_section:nth-child(2):hover > ul li,
+  .footer_section:nth-child(3):hover > table {
+    display: block;
+    transition: 2s;
+  }
+}
+
+/* Tablet & Mobile */
+@media (max-width: 1024px) {
+  .header__main-box-name,
+  .header__navbar, .header__main-searchbar {
+    display: none;
+  }
+  /* nav bar  */
+  label .fa-bars {
+    display: block;
+  }
+  .fa-bars {
+    display: block;
+  }
+ .header__navbar-input:checked ~ .header__overlay{
+    display: block;
+ }
+ .header__navbar-input:checked ~ .header__navbar_mobile{
+    transform: translateX(0);
+    opacity: 1;
+ }
+}

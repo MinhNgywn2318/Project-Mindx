@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LianLa</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./responsive.css" />
+
+    <script
+      src="https://kit.fontawesome.com/28e3ccd7a5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="header__main">
+        <div>
+          <a href="./index.html">
+            <img src="./asset/logo1.png" alt="logo" id="logo" />
+          </a>
+        </div>
+        <div class="header__main-searchbar">
+          <input
+            type="search"
+            name="tu_khoa"
+            id="searchbar"
+            placeholder="Tìm sản phẩm"
+          />
+          <button type="submit" class="header__main-searchbar-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <div class="header__main-box">
+          <a href="" class="header__main-box-item">
+            <button class="header__main-box-btn">
+              <i class="fa-solid fa-user-astronaut"></i>
+            </button>
+            <span class="header__main-box-name">TÀI KHOẢN</span>
+          </a>
+          <a href="" class="header__main-box-item">
+            <button class="header__main-box-btn">
+              <i class="fa-solid fa-cart-plus"></i>
+            </button>
+            <span class="header__main-box-name">GIỎ HÀNG</span>
+          </a>
+          <!-- header mobile -->
+          <label for="header__navbar_mobile-input">
+            <i class="fa-solid fa-bars"></i>
+          </label>
+          <input
+            type="checkbox" hidden
+            class="header__navbar-input"
+            id="header__navbar_mobile-input"
+          />
+          <label
+            for="header__navbar_mobile-input"
+            class="header__overlay"
+          ></label>
+          <nav class="header__navbar_mobile">
+            <label for="header__navbar_mobile-input" class="header__navbar_mobile-close">
+              <i class="fa-solid fa-xmark"></i>
+            </label>
+            <ul class="header__navbar_mobile-list">
+              <li class="header__navbar_mobile-item">
+                <a href="" class="header__navbar_mobile-item-link">SẢN PHẨM</a>
+              </li>
+              <li class="header__navbar_mobile-item">
+                <a href="" class="header__navbar_mobile-item-link">THEO DÕI ĐƠN HÀNG</a>
+              </li>
+              <li class="header__navbar_mobile-item">
+                <a href="" class="header__navbar_mobile-item-link">TIN TỨC</a>
+              </li>
+              <li class="header__navbar_mobile-item">
+                <a href="" class="header__navbar_mobile-item-link">HƯỚNG DẪN</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <nav class="header__navbar">
+        <ul class="header__navbar-list">
+          <li class="header__navbar-item">
+            <a href="" class="header__navbar-item-link">TRANG CHỦ</a>
+          </li>
+          <li class="header__navbar-item">
+            <a href="" class="header__navbar-item-link">DANH MỤC</a>
+            <div class="menu">
+              <div class="menu-item">
+                <h4>THỜI TRANG</h4>
+                <ul class="menu-item-list">
+                  <li>
+                    <a href="">Thời trang nam</a>
+                  </li>
+                  <li>
+                    <a href="">Thời trang nữ</a>
+                  </li>
+                  <li><a href="">Giày dép</a></li>
+                  <li><a href="">Túi ví</a></li>
+                  <li><a href="">Phụ kiện</a></li>
+                </ul>
+              </div>
+              <div class="menu-item">
+                <h4>SẮC ĐẸP</h4>
+                <ul class="menu-item-list">
+                  <li>
+                    <a href="">Chăm sóc da mặt</a>
+                  </li>
+                  <li>
+                    <a href="">Chăm sóc cơ thể</a>
+                  </li>
+                  <li><a href="">Chăm sóc cá nhân</a></li>
+                  <li><a href="">Trang điểm</a></li>
+                  <li><a href="">Thực phẩm chức năng</a></li>
+                </ul>
+              </div>
+              <div class="menu-item">
+                <h4>THIẾT BỊ ĐIỆN TỬ</h4>
+                <ul class="menu-item-list">
+                  <li>
+                    <a href="">Điện thoại</a>
+                  </li>
+                  <li>
+                    <a href="">Laptop</a>
+                  </li>
+                  <li><a href="">Tablet</a></li>
+                  <li><a href="">Đồng hồ</a></li>
+                  <li><a href="">Phụ kiện</a></li>
+                </ul>
+              </div>
+              <div class="menu-item">
+                <h4>BÁCH HÓA</h4>
+                <ul class="menu-item-list">
+                  <li>
+                    <a href="">Thực phẩm tươi sống</a>
+                  </li>
+                  <li>
+                    <a href="">Rau, củ, trái cây</a>
+                  </li>
+                  <li><a href="">Đồ khô</a></li>
+                  <li><a href="">Đồ dùng gia đình</a></li>
+                  <li><a href="">Vệ sinh nhà cửa</a></li>
+                </ul>
+              </div>
+            </div>
+          </li>
+          <li class="header__navbar-item">
+            <a href="" class="header__navbar-item-link">SALE OFF</a>
+          </li>
+          <li class="header__navbar-item">
+            <a href="" class="header__navbar-item-link">TIN TỨC</a>
+          </li>
+          <li class="header__navbar-item">
+            <a href="" class="header__navbar-item-link">HƯỚNG DẪN</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- carousel  -->
+    <div class="carousel">
+      <img src="./asset/carousel_2.webp" alt="" />
+    </div>
+    <!-- Services  -->
+    <div class="service_container">
+      <div class="service_container-item">
+        <i class="fa-solid fa-truck-fast"></i>
+        <div>
+          <p>Vận chuyển <span>TOÀN QUỐC</span></p>
+          <p>Thanh toán khi nhận hàng</p>
+        </div>
+      </div>
+      <div class="service_container-item">
+        <i class="fa-regular fa-thumbs-up"></i>
+        <div>
+          <span>BẢO ĐẢM CHẤT LƯỢNG</span>
+          <p>Sản phẩm bảo đảm chất lượng</p>
+        </div>
+      </div>
+      <div class="service_container-item">
+        <i class="fa-solid fa-credit-card"></i>
+        <div>
+          <p>Tiến hành <span>THANH TOÁN</span></p>
+          <p>Với nhiều <span>PHƯƠNG THỨC</span></p>
+        </div>
+      </div>
+      <div class="service_container-item">
+        <i class="fa-solid fa-medal"></i>
+        <div>
+          <span>Đổi sản phẩm mới</span>
+          <p>nếu sản phẩm lỗi</p>
+        </div>
+      </div>
+    </div>
+    <!-- sale off -->
+    <div class="saleoff_container">
+      <h2 class="section_header">SALE OFF</h2>
+      <div class="saleoff_container-box">
+        <div class="saleoff_container-item">
+          <a href=""><img src="./asset/saleoff1.webp" alt="" /> </a>
+        </div>
+        <div class="saleoff_container-item">
+          <a href=""><img src="./asset/saleoff2.jpg" alt="" /> </a>
+        </div>
+        <div class="saleoff_container-item">
+          <a href=""><img src="./asset/saleoff3.jpg" alt="" /> </a>
+        </div>
+      </div>
+    </div>
+    <!-- phần sản phẩm -->
+    <main>
+      <h2 class="section_header">THỜI TRANG</h2>
+      <div class="section_box">
+        <div class="section_box1">
+          <div class="image">
+            <img
+              class="section_img"
+              src="./asset/clothes_1.jpg"
+              alt="áo thun"
+            />
+            <a href="" class="readmore">XEM CHI TIẾT</a>
+          </div>
+          <h3 class="item_name">tên sản phẩm</h3>
+          <div class="item_price">giá</div>
+          <button class="cart_button">Add to cart</button>
+        </div>
+
+        <div class="section_box2">
+          <div class="image">
+            <img
+              class="section_img"
+              src="./asset/clothes_1.jpg"
+              alt="áo thun"
+            />
+            <a href="" class="readmore">XEM CHI TIẾT</a>
+          </div>
+          <h3 class="item_name">tên sản phẩm</h3>
+          <div class="item_price">giá</div>
+          <button class="cart_button">add to cart</button>
+        </div>
+        <div class="section_box3">
+          <div class="image">
+            <img
+              class="section_img"
+              src="./asset/clothes_1.jpg"
+              alt="áo thun"
+            />
+            <a href="" class="readmore">XEM CHI TIẾT</a>
+          </div>
+          <h3 class="item_name">tên sản phẩm</h3>
+          <div class="item_price">giá</div>
+          <button class="cart_button">add to cart</button>
+        </div>
+
+        <div class="section_box4">
+          <div class="image">
+            <img
+              class="section_img"
+              src="./asset/clothes_1.jpg"
+              alt="áo thun"
+            />
+            <a href="" class="readmore">XEM CHI TIẾT</a>
+          </div>
+          <h3 class="item_name">tên sản phẩm</h3>
+          <div class="item_price">giá</div>
+          <button class="cart_button">add to cart</button>
+        </div>
+      </div>
+
+      <h2 class="section_header">SẮC ĐẸP</h2>
+      <div class="section_box">
+        <div class="section_box1">
+          <div class="image">
+            <img
+              class="section_img"
+              src="./asset/image3.jpg"
+              alt="cosmetic"
+            />
+            <a href="" class="readmore">XEM CHI TIẾT</a>
+          </div>
+          <h3 class="item_name">tên sản phẩm</h3>
+          <div class="item_price">giá</div>
+          <button class="cart_button">Add to cart</button>
+        </div>
+
+        <div class="section_box2">
+          <div class="image">
+            <img
+              class="section_img"
+              src="./asset/image3.jpg"
+              alt="cosmetic"
+            />
+            <a href="" class="readmore">XEM CHI TIẾT</a>
+          </div>
+          <h3 class="item_name">tên sản phẩm</h3>
+          <div class="item_price">giá</div>
+          <button class="cart_button">add to cart</button>
+        </div>
+        <div class="section_box3">
+          <div class="image">
+            <img
+              class="section_img"
+              src="./asset/image3.jpg"
+              alt="cosmetic"
+            />
+            <a href="" class="readmore">XEM CHI TIẾT</a>
+          </div>
+          <h3 class="item_name">tên sản phẩm</h3>
+          <div class="item_price">giá</div>
+          <button class="cart_button">add to cart</button>
+        </div>
+
+        <div class="section_box4">
+          <div class="image">
+            <img
+              class="section_img"
+              src="./asset/image3.jpg"
+              alt="cosmetic"
+            />
+            <a href="" class="readmore">XEM CHI TIẾT</a>
+          </div>
+          <h3 class="item_name">tên sản phẩm</h3>
+          <div class="item_price">giá</div>
+          <button class="cart_button">add to cart</button>
+        </div>
+      </div>
+
+      <h2 class="section_header">THIẾT BỊ ĐIỆN TỬ</h2>
+      <div class="section_box">
+        <div class="section_box1">
+          <div class="image">
+            <img
+              class="section_img"
+              src="./asset/image1.jpg"
+              alt="iphone"
+            />
+            <a href="" class="readmore">XEM CHI TIẾT</a>
+          </div>
+          <h3 class="item_name">tên sản phẩm</h3>
+          <div class="item_price">giá</div>
+          <button class="cart_button">Add to cart</button>
+        </div>
+
+        <div class="section_box2">
+          <div class="image">
+            <img
+              class="section_img"
+              src="./asset/image1.jpg"
+              alt="iphone"
+            />
+            <a href="" class="readmore">XEM CHI TIẾT</a>
+          </div>
+          <h3 class="item_name">tên sản phẩm</h3>
+          <div class="item_price">giá</div>
+          <button class="cart_button">add to cart</button>
+        </div>
+        <div class="section_box3">
+          <div class="image">
+            <img
+              class="section_img"
+              src="./asset/image1.jpg"
+              alt="iphone"
+            />
+            <a href="" class="readmore">XEM CHI TIẾT</a>
+          </div>
+          <h3 class="item_name">tên sản phẩm</h3>
+          <div class="item_price">giá</div>
+          <button class="cart_button">add to cart</button>
+        </div>
+
+        <div class="section_box4">
+          <div class="image">
+            <img
+              class="section_img"
+              src="./asset/image1.jpg"
+              alt="iphone"
+            />
+            <a href="" class="readmore">XEM CHI TIẾT</a>
+          </div>
+          <h3 class="item_name">tên sản phẩm</h3>
+          <div class="item_price">giá</div>
+          <button class="cart_button">add to cart</button>
+        </div>
+      </div>
+
+      <h2 class="section_header">BÁCH HÓA</h2>
+      <div class="section_box">
+        <div class="section_box1">
+          <div class="image">
+            <img
+              class="section_img"
+              src="./asset/image2.jpg"
+              alt="vinamilk"
+            />
+            <a href="" class="readmore">XEM CHI TIẾT</a>
+          </div>
+          <h3 class="item_name">tên sản phẩm</h3>
+          <div class="item_price">giá</div>
+          <button class="cart_button">Add to cart</button>
+        </div>
+
+        <div class="section_box2">
+          <div class="image">
+            <img
+              class="section_img"
+              src="./asset/image2.jpg"
+              alt="vinamilk"
+            />
+            <a href="" class="readmore">XEM CHI TIẾT</a>
+          </div>
+          <h3 class="item_name">tên sản phẩm</h3>
+          <div class="item_price">giá</div>
+          <button class="cart_button">add to cart</button>
+        </div>
+        <div class="section_box3">
+          <div class="image">
+            <img
+              class="section_img"
+              src="./asset/image2.jpg"
+              alt="vinamilk"
+            />
+            <a href="" class="readmore">XEM CHI TIẾT</a>
+          </div>
+          <h3 class="item_name">tên sản phẩm</h3>
+          <div class="item_price">giá</div>
+          <button class="cart_button">add to cart</button>
+        </div>
+
+        <div class="section_box4">
+          <div class="image">
+            <img
+              class="section_img"
+              src="./asset/image2.jpg"
+              alt="vinamilk"
+            />
+            <a href="" class="readmore">XEM CHI TIẾT</a>
+          </div>
+          <h3 class="item_name">tên sản phẩm</h3>
+          <div class="item_price">giá</div>
+          <button class="cart_button">add to cart</button>
+        </div>
+      </div>
+    </main>
+    <!-- tin tức mới -->
+    <div class="news_container">
+      <h2 class="section_header">TIN TỨC MỚI</h2>
+      <div class="news_container-box">
+        <div class="news_container-item">
+          <div class="news_container-img">
+            <a href=""><img src="./asset/news1.jpg" alt="" /></a>
+          </div>
+          <div class="news_container-content">
+            <h3>
+              <a href="">Chương trình khuyến mãi tháng 10 </a>
+            </h3>
+            <span>01-10-2023 09:21</span>
+          </div>
+        </div>
+        <div class="news_container-item">
+          <div class="news_container-img">
+            <a href=""><img src="./asset/news2.jpg" alt="" /></a>
+          </div>
+          <div class="news_container-content">
+            <h3>
+              <a href="">Tích lũy điểm thành viên tại LianLa </a>
+            </h3>
+            <span>16-10-2023 14:53</span>
+          </div>
+        </div>
+        <div class="news_container-item">
+          <div class="news_container-img">
+            <a href=""><img src="./asset/news3.jpg" alt="" /></a>
+          </div>
+          <div class="news_container-content">
+            <h3>
+              <a href="">Kết quả quay số trúng thưởng ngày 10/10</a>
+            </h3>
+            <span>12-10-2023 14:34</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- backtotop -->
+    <a class="backtotop" href="#">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <div class="footer_section">
+          <h3 class="footer_heading">
+            <a href="">
+              <img src="./asset/logo2.png" alt="logo" class="footer_logo" />
+            </a>
+          </h3>
+          <div>
+            <i class="fa-solid fa-location-dot"></i> Địa chỉ: 105 Đường số 8,
+            phường 10, quận Phú Nhuận
+          </div>
+        </div>
+        <div class="footer_section">
+          <h3 class="footer_heading">CHÍNH SÁCH</h3>
+          <ul>
+            <li>
+              <a href="">Chính sách thanh toán</a>
+            </li>
+            <li>
+              <a href="">Chính sách đổi trả hàng</a>
+            </li>
+            <li>
+              <a href="">Chính sách vận chuyển</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_section">
+          <h3 class="footer_heading">KẾT NỐI VỚI CHÚNG TÔI</h3>
+          <table>
+            <tr>
+              <td>
+                <a href="">
+                  <img src="./asset/facebook.webp" alt="" class="facebook_img"
+                /></a>
+              </td>
+              <td class="social-content"><a href="">Facebook</a></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="">
+                  <img src="./asset/zalo-logo.png" alt="zalo" class="zalo_img"
+                /></a>
+              </td>
+              <td class="social-content">
+                <a href="">Zalo</a>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <div class="footer_section">
+          <h3 class="footer_heading">ĐĂNG KÝ NHẬN TIN KHUYẾN MÃI</h3>
+          <div class="footer_email-box">
+            <input
+              type="email"
+              class="footer_email"
+              placeholder="Nhập địa chỉ email"
+            />
+            <button class="email_button">Đăng ký</button>
+          </div>
+          <a href=""
+            ><img
+              src="./asset/download.png"
+              alt="download"
+              class="downloadapp_img"
+          /></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
